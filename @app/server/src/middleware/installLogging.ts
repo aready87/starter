@@ -8,6 +8,6 @@ export default (app: Express) => {
     // To enable logging on development, uncomment the next line:
     // app.use(morgan("tiny"));
   } else {
-    app.use(morgan(isDev ? "tiny" : "combined"));
+    app.use(morgan("combined"));
   }
 };
